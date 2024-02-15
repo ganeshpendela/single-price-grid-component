@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "karla", sans-serif;
+    font-size: 16px;
+    background-color: var(--light-gray);
+    padding: 1.25rem;
+}
+
+ul{
+    list-style: None;
+}
+
+p, li {
+    line-height: 1.6;
+}
+
+.btn{
+    background-color: var(--bright-yellow);
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.3rem;
+    border: None;
+    cursor: pointer;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+
+}
+.container{
+    background-color: white;
+    border-radius: 0.625rem;
+}
+
+p.green{
+    color: var(--bright-yellow);
+    font-weight: 700;
+}
+
+.container > article:first-child{
+    padding: 2rem;
+}
+
+.container > article:first-child h1{
+    color: var(--cyan);
+    margin-bottom: 1rem;
+}
+
+.container > article:first-child p{
+    margin-bottom: 1rem;
+}
+
+.container > article:first-child p:last-child{
+    color: var(--grayish-blue)
+}
+
+.container section{
+    display: flex;
+    flex-direction: column;
+}
+
+.container section article{
+    padding: 0 2rem 2rem;
+    color: white;
+}
+
+.container section article:first-child{
+    background-color: var(--cyan);
+    padding: 2rem ;
+}
+
+.container section article:first-child h2{
+    margin-bottom: 1rem;
+}
+
+.container section article:first-child h3{
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.container section article:first-child h3 span{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-right: 0.625rem;
+}
+
+.container section article:first-child p{
+    margin: 1rem 0rem;
+}
+
+.container section article:last-child{
+    background-color: hsl(179, 62%, 49%);
+    padding-top:1.5rem;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+}
+
+.container section article:last-child h2{
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px){
+
+    body{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        min-height: 100vh;
+    }
+
+    .container{
+        width: 700px;
+        margin: auto;
+        border-radius: 0.625rem;
+    }
+
+    .container section{
+        flex-direction: row;
+    }
+
+    .container > article:first-child h1{
+        font-size: 2rem;
+    }
+
+    .container section article:first-child{
+        flex:1;
+        border-bottom-left-radius: 0.625rem;
+    }
+
+    .container section article:last-child{
+        flex:1;
+        border-bottom-right-radius: 0.625rem;
+        border-bottom-left-radius: 0;
+    }
+
+}
