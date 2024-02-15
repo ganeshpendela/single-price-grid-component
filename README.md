@@ -14,8 +14,8 @@ This is a solution to the [single-preice-grid-component on Frontend Mentor](http
 
 Developed a single-preice-grid-component solution using basic html and css styles.
 ### Screenshot
+![single price grid ](image.png)
 
-![3-column-preview-card](image.png)
 
 ## My process
 
