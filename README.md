@@ -14,8 +14,7 @@ This is a solution to the [single-preice-grid-component on Frontend Mentor](http
 
 Developed a single-preice-grid-component solution using basic html and css styles.
 ### Screenshot
-![3](<Screenshot 2024-02-15 at 1.20.35 PM.png>)
-
+![single piece grid component](image-1.png)
 ## My process
 
 First I defined all the global variables i.e all the colors, and then imported the required fonts and then used the concepts of flex-box, css sombinators, psuedo classes, psuedo elements to get the output.
